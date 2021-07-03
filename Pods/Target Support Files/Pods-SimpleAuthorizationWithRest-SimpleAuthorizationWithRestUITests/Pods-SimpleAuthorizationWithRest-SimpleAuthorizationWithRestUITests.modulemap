@@ -1,0 +1,6 @@
+framework module Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests {
+  umbrella header "Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
