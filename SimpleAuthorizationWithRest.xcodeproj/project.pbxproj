@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AC9F963653096278979B6FD /* Pods_SimpleAuthorizationWithRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9032183BD82D997E9CC269 /* Pods_SimpleAuthorizationWithRest.framework */; };
+		515EDEE0282A8043D5C84354 /* Pods_SimpleAuthorizationWithRestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */; };
+		54835E4B77E1B4E0B1522B7C /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */; };
 		724C89122690357C00ACA77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89112690357C00ACA77B /* AppDelegate.swift */; };
 		724C89142690357C00ACA77B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89132690357C00ACA77B /* SceneDelegate.swift */; };
 		724C89162690357C00ACA77B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89152690357C00ACA77B /* ViewController.swift */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D9032183BD82D997E9CC269 /* Pods_SimpleAuthorizationWithRest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		326E3A9FFC8085CF9D853A06 /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44B1A4BEF8E850140A41C935 /* Pods-SimpleAuthorizationWithRest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest/Pods-SimpleAuthorizationWithRest.release.xcconfig"; sourceTree = "<group>"; };
+		4A38A61F42B7005A9D0A3F10 /* Pods-SimpleAuthorizationWithRestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C890E2690357C00ACA77B /* SimpleAuthorizationWithRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAuthorizationWithRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C89112690357C00ACA77B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724C89132690357C00ACA77B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		724C892F2690357D00ACA77B /* SimpleAuthorizationWithRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAuthorizationWithRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C89332690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthorizationWithRestUITests.swift; sourceTree = "<group>"; };
 		724C89352690357D00ACA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24AF148B9BE68598CEA2FCC /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0B48DF183FF2B9AD2A9AD0 /* Pods-SimpleAuthorizationWithRest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest/Pods-SimpleAuthorizationWithRest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC9F963653096278979B6FD /* Pods_SimpleAuthorizationWithRest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515EDEE0282A8043D5C84354 /* Pods_SimpleAuthorizationWithRestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54835E4B77E1B4E0B1522B7C /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39D1E50981DE5A11EB89563F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B48DF183FF2B9AD2A9AD0 /* Pods-SimpleAuthorizationWithRest.debug.xcconfig */,
+				44B1A4BEF8E850140A41C935 /* Pods-SimpleAuthorizationWithRest.release.xcconfig */,
+				D24AF148B9BE68598CEA2FCC /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig */,
+				326E3A9FFC8085CF9D853A06 /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.release.xcconfig */,
+				4A38A61F42B7005A9D0A3F10 /* Pods-SimpleAuthorizationWithRestTests.debug.xcconfig */,
+				832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		66FDB58D22AC5D744B2137E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D9032183BD82D997E9CC269 /* Pods_SimpleAuthorizationWithRest.framework */,
+				C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */,
+				6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		724C89052690357C00ACA77B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				724C89272690357D00ACA77B /* SimpleAuthorizationWithRestTests */,
 				724C89322690357D00ACA77B /* SimpleAuthorizationWithRestUITests */,
 				724C890F2690357C00ACA77B /* Products */,
+				39D1E50981DE5A11EB89563F /* Pods */,
+				66FDB58D22AC5D744B2137E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724C89382690357D00ACA77B /* Build configuration list for PBXNativeTarget "SimpleAuthorizationWithRest" */;
 			buildPhases = (
+				B419E868353F58B22A42F7C4 /* [CP] Check Pods Manifest.lock */,
 				724C890A2690357C00ACA77B /* Sources */,
 				724C890B2690357C00ACA77B /* Frameworks */,
 				724C890C2690357C00ACA77B /* Resources */,
@@ -152,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724C893B2690357D00ACA77B /* Build configuration list for PBXNativeTarget "SimpleAuthorizationWithRestTests" */;
 			buildPhases = (
+				447E1142ED44BF0077593DEB /* [CP] Check Pods Manifest.lock */,
 				724C89202690357D00ACA77B /* Sources */,
 				724C89212690357D00ACA77B /* Frameworks */,
 				724C89222690357D00ACA77B /* Resources */,
+				68E637A56C72104C199EFA39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724C893E2690357D00ACA77B /* Build configuration list for PBXNativeTarget "SimpleAuthorizationWithRestUITests" */;
 			buildPhases = (
+				2A85EA92EFC2849D61562D23 /* [CP] Check Pods Manifest.lock */,
 				724C892B2690357D00ACA77B /* Sources */,
 				724C892C2690357D00ACA77B /* Frameworks */,
 				724C892D2690357D00ACA77B /* Resources */,
@@ -252,6 +297,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A85EA92EFC2849D61562D23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		447E1142ED44BF0077593DEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleAuthorizationWithRestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E637A56C72104C199EFA39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B419E868353F58B22A42F7C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleAuthorizationWithRest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		724C890A2690357C00ACA77B /* Sources */ = {
@@ -433,6 +564,7 @@
 		};
 		724C89392690357D00ACA77B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0B48DF183FF2B9AD2A9AD0 /* Pods-SimpleAuthorizationWithRest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +584,7 @@
 		};
 		724C893A2690357D00ACA77B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44B1A4BEF8E850140A41C935 /* Pods-SimpleAuthorizationWithRest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +604,7 @@
 		};
 		724C893C2690357D00ACA77B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A38A61F42B7005A9D0A3F10 /* Pods-SimpleAuthorizationWithRestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +627,7 @@
 		};
 		724C893D2690357D00ACA77B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +650,7 @@
 		};
 		724C893F2690357D00ACA77B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24AF148B9BE68598CEA2FCC /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +671,7 @@
 		};
 		724C89402690357D00ACA77B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326E3A9FFC8085CF9D853A06 /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
