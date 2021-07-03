@@ -52,3 +52,5 @@ chmod +x xcresults
 ### Open Allure report in browser
 
 ```allure serve outputDirectory/```
+
+![](https://a.radikal.ru/a02/2107/75/87e8010ceec7.png)
