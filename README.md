@@ -28,7 +28,7 @@ You will need the following technologies available to try it out:
 * Xcode 
 ### Ho w to run
 
-``` xcodebuild test -workspace ToDoApplication.xcworkspace -scheme ToDoApplication -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.0' -resultBundlePath TestResults```
+``` ```
 
 - [x] ability to run tests for different browsers/os by configuring;
 - [x] ability to run tests for different environments(urls) by configuring/by command-line.
