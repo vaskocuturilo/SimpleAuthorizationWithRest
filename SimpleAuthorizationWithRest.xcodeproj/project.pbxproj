@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3AC9F963653096278979B6FD /* Pods_SimpleAuthorizationWithRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9032183BD82D997E9CC269 /* Pods_SimpleAuthorizationWithRest.framework */; };
 		515EDEE0282A8043D5C84354 /* Pods_SimpleAuthorizationWithRestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */; };
 		54835E4B77E1B4E0B1522B7C /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */; };
+		7248A695269703D200A5C2D7 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A694269703D200A5C2D7 /* Buttons.swift */; };
+		7248A69A269706B900A5C2D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A699269706B900A5C2D7 /* LoginViewController.swift */; };
+		7248A69F269706C600A5C2D7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A69E269706C600A5C2D7 /* SignUpViewController.swift */; };
+		7248A6A4269707A900A5C2D7 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A6A3269707A900A5C2D7 /* TextFieldStyle.swift */; };
 		724C89122690357C00ACA77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89112690357C00ACA77B /* AppDelegate.swift */; };
 		724C89142690357C00ACA77B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89132690357C00ACA77B /* SceneDelegate.swift */; };
 		724C89162690357C00ACA77B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89152690357C00ACA77B /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 		724C891E2690357D00ACA77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724C891C2690357D00ACA77B /* LaunchScreen.storyboard */; };
 		724C89292690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89282690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift */; };
 		724C89342690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89332690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift */; };
+		7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4D72696FF830084E6CC /* HomeViewController.swift */; };
+		7266E4E2269701780084E6CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4E1269701780084E6CC /* Constants.swift */; };
+		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
+		72DCB67726925A1B00631980 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72DCB67626925A1B00631980 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,10 @@
 		44B1A4BEF8E850140A41C935 /* Pods-SimpleAuthorizationWithRest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest/Pods-SimpleAuthorizationWithRest.release.xcconfig"; sourceTree = "<group>"; };
 		4A38A61F42B7005A9D0A3F10 /* Pods-SimpleAuthorizationWithRestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7248A694269703D200A5C2D7 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		7248A699269706B900A5C2D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7248A69E269706C600A5C2D7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7248A6A3269707A900A5C2D7 /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
 		724C890E2690357C00ACA77B /* SimpleAuthorizationWithRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAuthorizationWithRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C89112690357C00ACA77B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724C89132690357C00ACA77B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +69,9 @@
 		724C892F2690357D00ACA77B /* SimpleAuthorizationWithRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAuthorizationWithRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C89332690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthorizationWithRestUITests.swift; sourceTree = "<group>"; };
 		724C89352690357D00ACA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7266E4D72696FF830084E6CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7266E4E1269701780084E6CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
 		832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; sourceTree = "<group>"; };
 		C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24AF148B9BE68598CEA2FCC /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC9F963653096278979B6FD /* Pods_SimpleAuthorizationWithRest.framework in Frameworks */,
+				72DCB67726925A1B00631980 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +117,6 @@
 				4A38A61F42B7005A9D0A3F10 /* Pods-SimpleAuthorizationWithRestTests.debug.xcconfig */,
 				832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +133,8 @@
 		724C89052690357C00ACA77B = {
 			isa = PBXGroup;
 			children = (
+				7266E4E0269701670084E6CC /* Helpers */,
+				7266E4DC269700C40084E6CC /* ViewControllers */,
 				724C89102690357C00ACA77B /* SimpleAuthorizationWithRest */,
 				724C89272690357D00ACA77B /* SimpleAuthorizationWithRestTests */,
 				724C89322690357D00ACA77B /* SimpleAuthorizationWithRestUITests */,
@@ -147,6 +164,7 @@
 				724C891A2690357D00ACA77B /* Assets.xcassets */,
 				724C891C2690357D00ACA77B /* LaunchScreen.storyboard */,
 				724C891F2690357D00ACA77B /* Info.plist */,
+				72DCB6622692599500631980 /* HelperApi.swift */,
 			);
 			path = SimpleAuthorizationWithRest;
 			sourceTree = "<group>";
@@ -169,6 +187,26 @@
 			path = SimpleAuthorizationWithRestUITests;
 			sourceTree = "<group>";
 		};
+		7266E4DC269700C40084E6CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7266E4D72696FF830084E6CC /* HomeViewController.swift */,
+				7248A699269706B900A5C2D7 /* LoginViewController.swift */,
+				7248A69E269706C600A5C2D7 /* SignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7266E4E0269701670084E6CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7266E4E1269701780084E6CC /* Constants.swift */,
+				7248A694269703D200A5C2D7 /* Buttons.swift */,
+				7248A6A3269707A900A5C2D7 /* TextFieldStyle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +224,9 @@
 			dependencies = (
 			);
 			name = SimpleAuthorizationWithRest;
+			packageProductDependencies = (
+				72DCB67626925A1B00631980 /* Alamofire */,
+			);
 			productName = SimpleAuthorizationWithRest;
 			productReference = 724C890E2690357C00ACA77B /* SimpleAuthorizationWithRest.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +301,9 @@
 				Base,
 			);
 			mainGroup = 724C89052690357C00ACA77B;
+			packageReferences = (
+				72DCB67526925A1B00631980 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 724C890F2690357C00ACA77B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -389,9 +433,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7248A695269703D200A5C2D7 /* Buttons.swift in Sources */,
+				7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */,
+				72DCB6632692599500631980 /* HelperApi.swift in Sources */,
+				7248A6A4269707A900A5C2D7 /* TextFieldStyle.swift in Sources */,
 				724C89162690357C00ACA77B /* ViewController.swift in Sources */,
+				7248A69A269706B900A5C2D7 /* LoginViewController.swift in Sources */,
 				724C89122690357C00ACA77B /* AppDelegate.swift in Sources */,
+				7248A69F269706C600A5C2D7 /* SignUpViewController.swift in Sources */,
 				724C89142690357C00ACA77B /* SceneDelegate.swift in Sources */,
+				7266E4E2269701780084E6CC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +781,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72DCB67526925A1B00631980 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72DCB67626925A1B00631980 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72DCB67526925A1B00631980 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 724C89062690357C00ACA77B /* Project object */;
 }
