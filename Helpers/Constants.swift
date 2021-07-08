@@ -24,5 +24,6 @@ struct Constans {
     
     struct Endpoints {
         static let register = "http://localhost:5000/auth/register"
+        static let login = "http://localhost:5000/auth/login"
     }
 }
