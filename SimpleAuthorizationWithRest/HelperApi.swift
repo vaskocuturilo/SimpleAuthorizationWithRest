@@ -15,6 +15,11 @@ struct NewUser: Encodable {
     var name: String
 }
 
+struct User: Encodable {
+    var username: String
+    var password: String
+}
+
 class HelperApi {
     
     static let functions = HelperApi()
@@ -25,6 +30,16 @@ class HelperApi {
         AF.request(Constans.Endpoints.register,
                    method: .post,
                    parameters: newUSer,
+                   encoder: JSONParameterEncoder.default).response { response in
+                    debugPrint(response)
+                   }
+    }
+    
+    public func loginUser(username: String, password: String) {
+        let login = User(username: username, password: password)
+        AF.request(Constans.Endpoints.login,
+                   method: .post,
+                   parameters: login,
                    encoder: JSONParameterEncoder.default).response { response in
                     debugPrint(response)
                    }
