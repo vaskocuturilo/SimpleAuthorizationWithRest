@@ -7,8 +7,9 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
-struct NewUser {
+struct NewUser: Encodable {
     var username: String
     var password: String
     var name: String
@@ -16,11 +17,16 @@ struct NewUser {
 
 class HelperApi {
     
-    public func registerNewUSer(username: String, password: String, name: String) {
-        AF.request("http://localhost:5000/auth/register", method: .post,
-                   parameters: ["username": username, "password": password, "name": name], encoding: JSONEncoding.default).responseJSON {
-                    response in
+    static let functions = HelperApi()
+    
+    public func registerNewUser(username: String, password: String, name: String) {
+        let newUSer = NewUser(username: username, password: password, name: name)
+        
+        AF.request(Constans.Endpoints.register,
+                   method: .post,
+                   parameters: newUSer,
+                   encoder: JSONParameterEncoder.default).response { response in
+                    debugPrint(response)
                    }
     }
-    
 }

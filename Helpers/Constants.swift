@@ -21,4 +21,8 @@ struct Constans {
         
         static let userName = "Test Client"
     }
+    
+    struct Endpoints {
+        static let register = "http://localhost:5000/auth/register"
+    }
 }
