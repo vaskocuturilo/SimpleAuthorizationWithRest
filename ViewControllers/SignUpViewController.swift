@@ -18,10 +18,11 @@ class SignUpViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        
     }
     
     @IBAction func tapSignUpButton(_ sender: Any) {
-        HelperApi.functions.registerNewUser(username: emailField.text!, password: passwordField.text!, name: nameField.text!)
+        HelperApi.functions.registerNewUser(username: emailField.text!, password: passwordField.text!, name: nameField.text!) 
         
         let refreshAlert = UIAlertController(title: "Information", message: "A new user was created.", preferredStyle: UIAlertController.Style.alert)
         
@@ -38,7 +39,6 @@ class SignUpViewController: UIViewController {
         view.window?.rootViewController = homeController
         view.window?.makeKeyAndVisible()
     }
-    
     /*
      // MARK: - Navigation
      

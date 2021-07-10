@@ -9,13 +9,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var deleteButton: UIBarButtonItem!
     @IBOutlet weak var logoutButton: UIButton!
+    
+    @IBOutlet weak var userName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
         Buttons.styleButton(logoutButton)
+        
     }
     
     @IBAction func tapLogoutButton(_ sender: Any) {
@@ -39,15 +43,21 @@ class HomeViewController: UIViewController {
         present(refreshAlert, animated: true, completion: nil)
     }
     
+    @IBAction func tapDeleteButton(_ sender: Any) {
+        HelperApi.functions.removeUser(username: userName.text!)
+        let refreshAlert = UIAlertController(title: "Information", message: "The user was remove.", preferredStyle: UIAlertController.Style.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            
+            self.transitionToHome()
+        }))
+        present(refreshAlert, animated: true, completion: nil)
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    func transitionToHome(){
+        
+        let homeController = storyboard?.instantiateViewController(identifier: Constans.StoryBoard.homeViewController) as? HomeViewController
+        view.window?.rootViewController = homeController
+        view.window?.makeKeyAndVisible()
+    }
 }

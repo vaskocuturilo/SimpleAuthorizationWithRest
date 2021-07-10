@@ -85,7 +85,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrL-gU-sfg">
                                 <rect key="frame" x="20" y="258" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpF-Jz-76b">
                                 <rect key="frame" x="20" y="392" width="374" height="34"/>
@@ -160,7 +160,7 @@
                                                 <rect key="frame" x="0.0" y="35" width="374" height="34"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9bH-6q-Hry">
                                                 <rect key="frame" x="0.0" y="70" width="374" height="34"/>
@@ -232,6 +232,25 @@
                                     <action selector="tapLogoutButton:" destination="NfR-gQ-XsK" eventType="touchUpInside" id="bDe-wY-cbV"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZ9-il-Ca3">
+                                <rect key="frame" x="159" y="262" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-67-gSI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="buC-1F-kaZ">
+                                        <barButtonItem key="rightBarButtonItem" title="Delete" image="trash" catalog="system" id="QN9-iV-Zh8">
+                                            <connections>
+                                                <action selector="tapDeleteButton:" destination="NfR-gQ-XsK" id="rlV-XA-OAZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ouk-vg-6dr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -244,14 +263,17 @@
                             <constraint firstItem="COS-ZZ-gDA" firstAttribute="leading" secondItem="Ouk-vg-6dr" secondAttribute="leading" constant="20" id="ztZ-Yz-RDd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NNa-IP-lOF"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="deleteButton" destination="QN9-iV-Zh8" id="OXq-Y4-WcV"/>
                         <outlet property="logoutButton" destination="YsS-rH-TNp" id="gpK-06-qH7"/>
+                        <outlet property="userName" destination="NZ9-il-Ca3" id="ojq-vf-itB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgi-h0-puJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="-620"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="-620.38043478260875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Vv-xP-0bZ">
@@ -273,6 +295,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

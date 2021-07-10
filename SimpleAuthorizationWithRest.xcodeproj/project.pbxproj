@@ -10,6 +10,8 @@
 		3AC9F963653096278979B6FD /* Pods_SimpleAuthorizationWithRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9032183BD82D997E9CC269 /* Pods_SimpleAuthorizationWithRest.framework */; };
 		515EDEE0282A8043D5C84354 /* Pods_SimpleAuthorizationWithRestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */; };
 		54835E4B77E1B4E0B1522B7C /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */; };
+		72020E8126999AF40073E147 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72020E8026999AF40073E147 /* UserStruct.swift */; };
+		72020E8C26999C6B0073E147 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72020E8B26999C6B0073E147 /* ResponseData.swift */; };
 		7248A695269703D200A5C2D7 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A694269703D200A5C2D7 /* Buttons.swift */; };
 		7248A69A269706B900A5C2D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A699269706B900A5C2D7 /* LoginViewController.swift */; };
 		7248A69F269706C600A5C2D7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A69E269706C600A5C2D7 /* SignUpViewController.swift */; };
@@ -26,6 +28,7 @@
 		7266E4E2269701780084E6CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4E1269701780084E6CC /* Constants.swift */; };
 		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
 		72DCB67726925A1B00631980 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72DCB67626925A1B00631980 /* Alamofire */; };
+		72FA082F26983E1A00A6879B /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA082E26983E1A00A6879B /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		44B1A4BEF8E850140A41C935 /* Pods-SimpleAuthorizationWithRest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest/Pods-SimpleAuthorizationWithRest.release.xcconfig"; sourceTree = "<group>"; };
 		4A38A61F42B7005A9D0A3F10 /* Pods-SimpleAuthorizationWithRestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72020E8026999AF40073E147 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
+		72020E8B26999C6B0073E147 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		7248A694269703D200A5C2D7 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		7248A699269706B900A5C2D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7248A69E269706C600A5C2D7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 		7266E4D72696FF830084E6CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7266E4E1269701780084E6CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
+		72FA082E26983E1A00A6879B /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 		832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; sourceTree = "<group>"; };
 		C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24AF148B9BE68598CEA2FCC /* Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests/Pods-SimpleAuthorizationWithRest-SimpleAuthorizationWithRestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +209,9 @@
 				7266E4E1269701780084E6CC /* Constants.swift */,
 				7248A694269703D200A5C2D7 /* Buttons.swift */,
 				7248A6A3269707A900A5C2D7 /* TextFieldStyle.swift */,
+				72FA082E26983E1A00A6879B /* UserToken.swift */,
+				72020E8026999AF40073E147 /* UserStruct.swift */,
+				72020E8B26999C6B0073E147 /* ResponseData.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -434,12 +443,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7248A695269703D200A5C2D7 /* Buttons.swift in Sources */,
+				72020E8126999AF40073E147 /* UserStruct.swift in Sources */,
 				7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */,
 				72DCB6632692599500631980 /* HelperApi.swift in Sources */,
 				7248A6A4269707A900A5C2D7 /* TextFieldStyle.swift in Sources */,
 				724C89162690357C00ACA77B /* ViewController.swift in Sources */,
+				72020E8C26999C6B0073E147 /* ResponseData.swift in Sources */,
 				7248A69A269706B900A5C2D7 /* LoginViewController.swift in Sources */,
 				724C89122690357C00ACA77B /* AppDelegate.swift in Sources */,
+				72FA082F26983E1A00A6879B /* UserToken.swift in Sources */,
 				7248A69F269706C600A5C2D7 /* SignUpViewController.swift in Sources */,
 				724C89142690357C00ACA77B /* SceneDelegate.swift in Sources */,
 				7266E4E2269701780084E6CC /* Constants.swift in Sources */,
