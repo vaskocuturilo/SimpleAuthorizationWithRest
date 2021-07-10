@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +19,6 @@ class LoginViewController: UIViewController {
         TextFieldStyle.styleTextField(emailField)
         TextFieldStyle.styleTextField(passwordField)
     }
-    
     
     @IBAction func tapLoginButton(_ sender: Any) {
         HelperApi.functions.loginUser(username: emailField.text!, password: passwordField.text!)

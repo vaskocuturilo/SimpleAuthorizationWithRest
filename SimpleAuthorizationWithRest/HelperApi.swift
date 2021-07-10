@@ -31,17 +31,57 @@ class HelperApi {
                    method: .post,
                    parameters: newUSer,
                    encoder: JSONParameterEncoder.default).response { response in
-                    debugPrint(response)
+                    switch (response.result) {
+                    
+                    case .success( _):
+                        
+                        do {
+                            let userInformation = try JSONDecoder().decode(ResponseData.self, from: response.data!)
+                            print(userInformation.message)
+                            
+                        } catch let error as NSError {
+                            print("Failed to load: \(error.localizedDescription)")
+                        }
+                        
+                    case .failure(let error):
+                        print("Request error: \(error.localizedDescription)")
+                    }
+                    
                    }
     }
     
     public func loginUser(username: String, password: String) {
-        let login = User(username: username, password: password)
         AF.request(Constans.Endpoints.login,
                    method: .post,
-                   parameters: login,
-                   encoder: JSONParameterEncoder.default).response { response in
+                   parameters: ["username":username, "password":password],
+                   encoder: JSONParameterEncoder.default).responseJSON { response in
+                    switch (response.result) {
+                    case .success( _):
+                        
+                        do {
+                            let userInformation = try JSONDecoder().decode(UserToken.self, from: response.data!)
+                            print(userInformation.token)
+                            
+                        } catch let error as NSError {
+                            print("Failed to load: \(error.localizedDescription)")
+                        }
+                        
+                    case .failure(let error):
+                        print("Request error: \(error.localizedDescription)")
+                    }
+                   }
+    }
+    
+    public func removeUser(username: String) {
+        let headers: HTTPHeaders = [
+            "Authorization": "",
+            "Accept": "application/json"
+        ]
+        AF.request(Constans.Endpoints.remove,
+                   method: .post, parameters:["username": username], encoder: JSONParameterEncoder.default, headers: headers).response { response in
                     debugPrint(response)
                    }
     }
+    
 }
+
