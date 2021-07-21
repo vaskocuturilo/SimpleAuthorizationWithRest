@@ -232,15 +232,8 @@
                                     <action selector="tapLogoutButton:" destination="NfR-gQ-XsK" eventType="touchUpInside" id="bDe-wY-cbV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZ9-il-Ca3">
-                                <rect key="frame" x="159" y="262" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-67-gSI">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-67-gSI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="buC-1F-kaZ">
                                         <barButtonItem key="rightBarButtonItem" title="Delete" image="trash" catalog="system" id="QN9-iV-Zh8">
@@ -251,6 +244,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHq-LQ-WYk">
+                                <rect key="frame" x="20" y="74" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ouk-vg-6dr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -258,6 +257,12 @@
                             <constraint firstItem="COS-ZZ-gDA" firstAttribute="top" secondItem="Ouk-vg-6dr" secondAttribute="top" constant="150" id="038-2L-bvd"/>
                             <constraint firstItem="YsS-rH-TNp" firstAttribute="leading" secondItem="Ouk-vg-6dr" secondAttribute="leading" constant="20" id="0VT-xq-cl0"/>
                             <constraint firstItem="YsS-rH-TNp" firstAttribute="top" secondItem="COS-ZZ-gDA" secondAttribute="bottom" constant="200" id="0gs-QF-ThI"/>
+                            <constraint firstItem="aHq-LQ-WYk" firstAttribute="top" secondItem="BMy-67-gSI" secondAttribute="bottom" constant="30" id="2xs-bX-rUd"/>
+                            <constraint firstItem="aHq-LQ-WYk" firstAttribute="leading" secondItem="Ouk-vg-6dr" secondAttribute="leading" constant="20" id="BJl-jR-5BP"/>
+                            <constraint firstItem="BMy-67-gSI" firstAttribute="centerX" secondItem="aHq-LQ-WYk" secondAttribute="centerX" id="Tjq-sQ-1bZ"/>
+                            <constraint firstItem="Ouk-vg-6dr" firstAttribute="trailing" secondItem="aHq-LQ-WYk" secondAttribute="trailing" constant="20" id="XhU-lS-wSL"/>
+                            <constraint firstItem="BMy-67-gSI" firstAttribute="top" secondItem="Ouk-vg-6dr" secondAttribute="top" id="fTC-nF-mAb"/>
+                            <constraint firstItem="BMy-67-gSI" firstAttribute="leading" secondItem="Ouk-vg-6dr" secondAttribute="leading" id="hLG-bg-2Ar"/>
                             <constraint firstItem="Ouk-vg-6dr" firstAttribute="trailing" secondItem="COS-ZZ-gDA" secondAttribute="trailing" constant="20" id="kUP-eq-AnP"/>
                             <constraint firstItem="Ouk-vg-6dr" firstAttribute="trailing" secondItem="YsS-rH-TNp" secondAttribute="trailing" constant="20" id="yxJ-B4-yUp"/>
                             <constraint firstItem="COS-ZZ-gDA" firstAttribute="leading" secondItem="Ouk-vg-6dr" secondAttribute="leading" constant="20" id="ztZ-Yz-RDd"/>
@@ -268,12 +273,12 @@
                     <connections>
                         <outlet property="deleteButton" destination="QN9-iV-Zh8" id="OXq-Y4-WcV"/>
                         <outlet property="logoutButton" destination="YsS-rH-TNp" id="gpK-06-qH7"/>
-                        <outlet property="userName" destination="NZ9-il-Ca3" id="ojq-vf-itB"/>
+                        <outlet property="userName" destination="aHq-LQ-WYk" id="H7j-fS-DbQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgi-h0-puJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.43478260869566" y="-620.38043478260875"/>
+            <point key="canvasLocation" x="405.79710144927537" y="-649.72826086956525"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Vv-xP-0bZ">
