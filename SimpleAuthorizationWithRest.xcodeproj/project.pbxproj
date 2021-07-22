@@ -23,7 +23,7 @@
 		724C891B2690357D00ACA77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724C891A2690357D00ACA77B /* Assets.xcassets */; };
 		724C891E2690357D00ACA77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724C891C2690357D00ACA77B /* LaunchScreen.storyboard */; };
 		724C89292690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89282690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift */; };
-		724C89342690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89332690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift */; };
+		72667BE426A9820800DFCF90 /* SimpleLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72667BE326A9820800DFCF90 /* SimpleLoginTest.swift */; };
 		7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4D72696FF830084E6CC /* HomeViewController.swift */; };
 		7266E4E2269701780084E6CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4E1269701780084E6CC /* Constants.swift */; };
 		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
@@ -72,8 +72,8 @@
 		724C89282690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthorizationWithRestTests.swift; sourceTree = "<group>"; };
 		724C892A2690357D00ACA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724C892F2690357D00ACA77B /* SimpleAuthorizationWithRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAuthorizationWithRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		724C89332690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthorizationWithRestUITests.swift; sourceTree = "<group>"; };
 		724C89352690357D00ACA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72667BE326A9820800DFCF90 /* SimpleLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTest.swift; sourceTree = "<group>"; };
 		7266E4D72696FF830084E6CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7266E4E1269701780084E6CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
@@ -187,10 +187,18 @@
 		724C89322690357D00ACA77B /* SimpleAuthorizationWithRestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				724C89332690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift */,
+				72667BE226A981DB00DFCF90 /* TestCases */,
 				724C89352690357D00ACA77B /* Info.plist */,
 			);
 			path = SimpleAuthorizationWithRestUITests;
+			sourceTree = "<group>";
+		};
+		72667BE226A981DB00DFCF90 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				72667BE326A9820800DFCF90 /* SimpleLoginTest.swift */,
+			);
+			path = TestCases;
 			sourceTree = "<group>";
 		};
 		7266E4DC269700C40084E6CC /* ViewControllers */ = {
@@ -470,7 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				724C89342690357D00ACA77B /* SimpleAuthorizationWithRestUITests.swift in Sources */,
+				72667BE426A9820800DFCF90 /* SimpleLoginTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
