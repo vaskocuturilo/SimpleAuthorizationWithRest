@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         HelperApi.functions.loginUser(username: emailField.text!, password: passwordField.text!) {(isSucess, str) in
             if isSucess {
                 let userDefaultStore = UserDefaults.standard
-                userDefaultStore.set(self.emailField.text, forKey: "key_Value")
+                userDefaultStore.set(self.emailField.text, forKey: "login")
                 userDefaultStore.set(str, forKey: "token")
                 self.transitionToHome()
             } else {

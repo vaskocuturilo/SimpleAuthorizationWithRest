@@ -23,6 +23,8 @@ class SignUpViewController: UIViewController {
     @IBAction func tapSignUpButton(_ sender: Any) {
         HelperApi.functions.registerNewUser(username: emailField.text!, password: passwordField.text!, name: nameField.text!) { (isSuccess, str) in
             if isSuccess {
+                let userDefaultStore = UserDefaults.standard
+                userDefaultStore.set(self.emailField.text, forKey: "login")
                 self.showSuccessMessage(message: str)
             } else {
                 self.showErrorMessage(message: str)
