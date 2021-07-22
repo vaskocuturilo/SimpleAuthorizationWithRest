@@ -1,5 +1,5 @@
 //
-//  SimpleLoginTest.swift
+//  SimpleLoginNewUserTest.swift
 //  SimpleAuthorizationWithRestUITests
 //
 //  Created by Anton Smirnov on 22.07.2021.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-class SimpleLoginTest: XCTestCase {
+class SimpleLoginNewUserTest: XCTestCase {
     
     func testSimpleLogin() throws {
         let app = XCUIApplication()
