@@ -12,6 +12,7 @@
 		54835E4B77E1B4E0B1522B7C /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B8EFFC650D7AF9C57B7DB /* Pods_SimpleAuthorizationWithRest_SimpleAuthorizationWithRestUITests.framework */; };
 		72020E8126999AF40073E147 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72020E8026999AF40073E147 /* UserStruct.swift */; };
 		72020E8C26999C6B0073E147 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72020E8B26999C6B0073E147 /* ResponseData.swift */; };
+		72457B3D26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72457B3C26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift */; };
 		7248A695269703D200A5C2D7 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A694269703D200A5C2D7 /* Buttons.swift */; };
 		7248A69A269706B900A5C2D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A699269706B900A5C2D7 /* LoginViewController.swift */; };
 		7248A69F269706C600A5C2D7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7248A69E269706C600A5C2D7 /* SignUpViewController.swift */; };
@@ -23,7 +24,7 @@
 		724C891B2690357D00ACA77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724C891A2690357D00ACA77B /* Assets.xcassets */; };
 		724C891E2690357D00ACA77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724C891C2690357D00ACA77B /* LaunchScreen.storyboard */; };
 		724C89292690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724C89282690357D00ACA77B /* SimpleAuthorizationWithRestTests.swift */; };
-		72667BE426A9820800DFCF90 /* SimpleLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72667BE326A9820800DFCF90 /* SimpleLoginTest.swift */; };
+		72667BE426A9820800DFCF90 /* SimpleLoginNewUserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72667BE326A9820800DFCF90 /* SimpleLoginNewUserTest.swift */; };
 		7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4D72696FF830084E6CC /* HomeViewController.swift */; };
 		7266E4E2269701780084E6CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4E1269701780084E6CC /* Constants.swift */; };
 		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
@@ -56,6 +57,7 @@
 		6F5AF2F4711B17077F17A58D /* Pods_SimpleAuthorizationWithRestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAuthorizationWithRestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72020E8026999AF40073E147 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
 		72020E8B26999C6B0073E147 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		72457B3C26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCreateNewUserTest.swift; sourceTree = "<group>"; };
 		7248A694269703D200A5C2D7 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		7248A699269706B900A5C2D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7248A69E269706C600A5C2D7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		724C892A2690357D00ACA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724C892F2690357D00ACA77B /* SimpleAuthorizationWithRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAuthorizationWithRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C89352690357D00ACA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72667BE326A9820800DFCF90 /* SimpleLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTest.swift; sourceTree = "<group>"; };
+		72667BE326A9820800DFCF90 /* SimpleLoginNewUserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginNewUserTest.swift; sourceTree = "<group>"; };
 		7266E4D72696FF830084E6CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7266E4E1269701780084E6CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
@@ -136,6 +138,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		72457B4126A9B76A005EC434 /* simple */ = {
+			isa = PBXGroup;
+			children = (
+				72667BE326A9820800DFCF90 /* SimpleLoginNewUserTest.swift */,
+				72457B3C26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift */,
+			);
+			path = simple;
+			sourceTree = "<group>";
+		};
 		724C89052690357C00ACA77B = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +207,7 @@
 		72667BE226A981DB00DFCF90 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
-				72667BE326A9820800DFCF90 /* SimpleLoginTest.swift */,
+				72457B4126A9B76A005EC434 /* simple */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -478,7 +489,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72667BE426A9820800DFCF90 /* SimpleLoginTest.swift in Sources */,
+				72667BE426A9820800DFCF90 /* SimpleLoginNewUserTest.swift in Sources */,
+				72457B3D26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

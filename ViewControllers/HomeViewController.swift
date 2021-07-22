@@ -1,9 +1,3 @@
-//
-//  HomeViewController.swift
-//  SimpleAuthorizationWithRest
-//
-//  Created by Anton Smirnov on 08.07.2021.
-//
 
 import UIKit
 
@@ -17,14 +11,10 @@ class HomeViewController: UIViewController {
     var token = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
         Buttons.styleButton(logoutButton)
         
         let userDefault = UserDefaults.standard
         userName.text = "This is name of : \(userDefault.string(forKey: "login")!)"
-        
     }
     
     @IBAction func tapLogoutButton(_ sender: Any) {
