@@ -14,7 +14,7 @@ struct MainPage: Page {
     
     private enum Identifiers {
            static let loginButton = "Login"
-           static let signUpButton = "SignUp"
+           static let signUpButton = "Sign Up"
         }
     
     func tapLoginButton() -> LoginPage {
@@ -26,7 +26,7 @@ struct MainPage: Page {
     
     func tapSignUpButton() -> SignUpPage {
         
-        application.buttons[Identifiers.loginButton].tap()
+        application.buttons[Identifiers.signUpButton].tap()
         
         return SignUpPage(application: application)
     }
