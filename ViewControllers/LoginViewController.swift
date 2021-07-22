@@ -21,33 +21,33 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tapLoginButton(_ sender: Any) {
-        HelperApi.functions.loginUser(username: emailField.text!, password: passwordField.text!)
-        let refreshAlert = UIAlertController(title: "Information", message: "Welcome \(emailField.text!)", preferredStyle: UIAlertController.Style.alert)
+        HelperApi.functions.loginUser(username: emailField.text!, password: passwordField.text!) {(isSucess, str) in
+            if isSucess {
+                let userDefaultStore = UserDefaults.standard
+                userDefaultStore.set(self.emailField.text, forKey: "key_Value")
+                userDefaultStore.set(str, forKey: "token")
+                self.transitionToHome()
+            } else {
+                self.showErrorMessage(message: str)
+            }
+        }
         
-        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-            
-            self.transitionToHome()
-        }))
-        present(refreshAlert, animated: true, completion: nil)
     }
     
-    func transitionToHome(){
+    func transitionToHome() {
         
         let homeController = storyboard?.instantiateViewController(identifier: Constans.StoryBoard.homeViewController) as? HomeViewController
         view.window?.rootViewController = homeController
         view.window?.makeKeyAndVisible()
     }
+    
+    internal func showErrorMessage(message: String) {
+        
+        let refreshAlert = UIAlertController(title: "Error Message", message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            
+        }))
+        present(refreshAlert, animated: true, completion: nil)
+    }
 }
-
-
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
-
-

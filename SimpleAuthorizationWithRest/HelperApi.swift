@@ -24,62 +24,103 @@ class HelperApi {
     
     static let functions = HelperApi()
     
-    public func registerNewUser(username: String, password: String, name: String) {
+    public func registerNewUser(username: String, password: String, name: String, completionHandler: @escaping (Bool, String) -> ()) {
+        let headers: HTTPHeaders = [
+            "Accept": "application/json"
+        ]
         let newUSer = NewUser(username: username, password: password, name: name)
         
         AF.request(Constans.Endpoints.register,
                    method: .post,
                    parameters: newUSer,
-                   encoder: JSONParameterEncoder.default).response { response in
+                   encoder: JSONParameterEncoder.default, headers: headers).response { response in
                     switch (response.result) {
                     
-                    case .success( _):
-                        
+                    case .success( let data):
                         do {
-                            let userInformation = try JSONDecoder().decode(ResponseData.self, from: response.data!)
-                            print(userInformation.message)
+                            let json = try JSONSerialization.jsonObject(with: data!, options: [])
+                            let message = (json as AnyObject).value(forKey: "message") as! String
+                            if response.response?.statusCode == 200 {
+                                completionHandler(true, message)
+                            } else {
+                                completionHandler(false, message)
+                            }
                             
                         } catch let error as NSError {
                             print("Failed to load: \(error.localizedDescription)")
+                            completionHandler(false, error.localizedDescription)
                         }
                         
                     case .failure(let error):
                         print("Request error: \(error.localizedDescription)")
+                        completionHandler(false, error.localizedDescription)
                     }
-                    
                    }
     }
     
-    public func loginUser(username: String, password: String) {
+    public func loginUser(username: String, password: String, completionHandler: @escaping (Bool, String) -> ()) {
+        let headers: HTTPHeaders = [
+            "Accept": "application/json"]
         AF.request(Constans.Endpoints.login,
                    method: .post,
-                   parameters: ["username":username, "password":password],
-                   encoder: JSONParameterEncoder.default).responseJSON { response in
+                   parameters: ["username": username, "password": password],
+                   encoder: JSONParameterEncoder.default, headers: headers).response { response in
                     switch (response.result) {
-                    case .success( _):
-                        
+                    case .success(let data):
                         do {
-                            let userInformation = try JSONDecoder().decode(UserToken.self, from: response.data!)
-                            print(userInformation.token)
+                            let jsonData = try JSONSerialization.jsonObject(with: data!, options: [])
+                            
+                            if response.response?.statusCode == 200 {
+                                let token = (jsonData as AnyObject).value(forKey: "token") as! String
+                                completionHandler(true, token)
+                            } else {
+                                let message = (jsonData as AnyObject).value(forKey: "message") as! String
+                                completionHandler(false, message)
+                            }
                             
                         } catch let error as NSError {
                             print("Failed to load: \(error.localizedDescription)")
+                            completionHandler(false, error.localizedDescription)
                         }
                         
                     case .failure(let error):
                         print("Request error: \(error.localizedDescription)")
+                        completionHandler(false, error.localizedDescription)
                     }
                    }
+        
     }
     
-    public func removeUser(username: String) {
+    public func removeUser(username: String, token: String, completionHandler: @escaping (Bool, String) -> ()) {
         let headers: HTTPHeaders = [
-            "Authorization": "",
-            "Accept": "application/json"
-        ]
+            "Authorization": token,
+            "Accept": "application/json"]
+        
         AF.request(Constans.Endpoints.remove,
-                   method: .post, parameters:["username": username], encoder: JSONParameterEncoder.default, headers: headers).response { response in
-                    debugPrint(response)
+                   method: .post,
+                   parameters: ["username": username], encoder: JSONParameterEncoder.default, headers: headers).response { response in
+                    switch (response.result) {
+                    case .success(let data):
+                        do {
+                            let jsonData = try JSONSerialization.jsonObject(with: data!, options: [])
+                            
+                            if response.response?.statusCode == 200 {
+                                let message = (jsonData as AnyObject).value(forKey: "message") as! String
+                                completionHandler(true, message)
+                            } else {
+                                let message = (jsonData as AnyObject).value(forKey: "message") as! String
+                                completionHandler(false, message)
+                            }
+                            
+                        } catch let error as NSError {
+                            print("Failed to load: \(error.localizedDescription)")
+                            completionHandler(false, error.localizedDescription)
+                        }
+                        
+                    case .failure(let error):
+                        print("Request error: \(error.localizedDescription)")
+                        completionHandler(false, error.localizedDescription)
+                    }
                    }
     }
     
