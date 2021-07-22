@@ -28,6 +28,14 @@
 		72667BE426A9820800DFCF90 /* SimpleLoginNewUserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72667BE326A9820800DFCF90 /* SimpleLoginNewUserTest.swift */; };
 		7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4D72696FF830084E6CC /* HomeViewController.swift */; };
 		7266E4E2269701780084E6CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266E4E1269701780084E6CC /* Constants.swift */; };
+		7285754726A9F993000BED75 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285754626A9F993000BED75 /* Page.swift */; };
+		7285754F26A9F9D8000BED75 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285754E26A9F9D8000BED75 /* MainPage.swift */; };
+		7285755426A9FA48000BED75 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285755326A9FA48000BED75 /* LoginPage.swift */; };
+		7285755D26A9FB23000BED75 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285755C26A9FB23000BED75 /* SignUp.swift */; };
+		7285756226A9FBAF000BED75 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285756126A9FBAF000BED75 /* BaseTestCase.swift */; };
+		7285756726A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */; };
+		7285756C26A9FE8C000BED75 /* LogoutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285756B26A9FE8C000BED75 /* LogoutPage.swift */; };
+		7285757126AA014A000BED75 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757026AA014A000BED75 /* MessagePage.swift */; };
 		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
 		72DCB67726925A1B00631980 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72DCB67626925A1B00631980 /* Alamofire */; };
 		72FA082F26983E1A00A6879B /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA082E26983E1A00A6879B /* UserToken.swift */; };
@@ -80,6 +88,14 @@
 		72667BE326A9820800DFCF90 /* SimpleLoginNewUserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginNewUserTest.swift; sourceTree = "<group>"; };
 		7266E4D72696FF830084E6CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7266E4E1269701780084E6CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7285754626A9F993000BED75 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		7285754E26A9F9D8000BED75 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		7285755326A9FA48000BED75 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		7285755C26A9FB23000BED75 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		7285756126A9FBAF000BED75 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginPageObjectTest.swift; sourceTree = "<group>"; };
+		7285756B26A9FE8C000BED75 /* LogoutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPage.swift; sourceTree = "<group>"; };
+		7285757026AA014A000BED75 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
 		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
 		72FA082E26983E1A00A6879B /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 		832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +169,7 @@
 		724C89052690357C00ACA77B = {
 			isa = PBXGroup;
 			children = (
+				7285754526A9F973000BED75 /* PageObject */,
 				7266E4E0269701670084E6CC /* Helpers */,
 				7266E4DC269700C40084E6CC /* ViewControllers */,
 				724C89102690357C00ACA77B /* SimpleAuthorizationWithRest */,
@@ -210,6 +227,7 @@
 		72667BE226A981DB00DFCF90 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
+				7285751A26A9EEEC000BED75 /* PageObject */,
 				72457B4126A9B76A005EC434 /* simple */,
 			);
 			path = TestCases;
@@ -236,6 +254,28 @@
 				72020E8B26999C6B0073E147 /* ResponseData.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7285751A26A9EEEC000BED75 /* PageObject */ = {
+			isa = PBXGroup;
+			children = (
+				7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */,
+			);
+			path = PageObject;
+			sourceTree = "<group>";
+		};
+		7285754526A9F973000BED75 /* PageObject */ = {
+			isa = PBXGroup;
+			children = (
+				7285754626A9F993000BED75 /* Page.swift */,
+				7285754E26A9F9D8000BED75 /* MainPage.swift */,
+				7285755326A9FA48000BED75 /* LoginPage.swift */,
+				7285755C26A9FB23000BED75 /* SignUp.swift */,
+				7285756126A9FBAF000BED75 /* BaseTestCase.swift */,
+				7285756B26A9FE8C000BED75 /* LogoutPage.swift */,
+				7285757026AA014A000BED75 /* MessagePage.swift */,
+			);
+			path = PageObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,8 +532,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7285756726A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift in Sources */,
+				7285755D26A9FB23000BED75 /* SignUp.swift in Sources */,
+				7285754F26A9F9D8000BED75 /* MainPage.swift in Sources */,
 				72457B5826A9BFDF005EC434 /* SimpleRemoveUserTest.swift in Sources */,
+				7285757126AA014A000BED75 /* MessagePage.swift in Sources */,
 				72667BE426A9820800DFCF90 /* SimpleLoginNewUserTest.swift in Sources */,
+				7285756226A9FBAF000BED75 /* BaseTestCase.swift in Sources */,
+				7285756C26A9FE8C000BED75 /* LogoutPage.swift in Sources */,
+				7285754726A9F993000BED75 /* Page.swift in Sources */,
+				7285755426A9FA48000BED75 /* LoginPage.swift in Sources */,
 				72457B3D26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
