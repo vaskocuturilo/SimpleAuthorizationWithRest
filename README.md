@@ -1,5 +1,5 @@
 # The simple authorization application.
-This is simple authorization application with REST API and mongodb
+This is simple authorization application with REST API.
 
 ## Test scenario:
 - Create simple application for authorization.
