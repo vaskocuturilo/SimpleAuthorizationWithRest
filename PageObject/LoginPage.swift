@@ -16,6 +16,7 @@ struct LoginPage: Page {
         static let emailField = "Email Required"
         static let passwordField = "Password Required"
         static let loginButton = "Login"
+        static let confirmMessage = "Ok"
     }
     
     func typeEmail(email: String) -> Self {
