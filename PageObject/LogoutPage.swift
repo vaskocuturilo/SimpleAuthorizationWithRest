@@ -14,6 +14,7 @@ struct LogoutPage: Page {
     private enum Identifiers {
         static let logoutButton = "Sign Out"
         static let okButton = "Ok"
+        static let trashButton = "Delete"
     }
     
     func tapLogoutButton() -> Self {
@@ -30,5 +31,13 @@ struct LogoutPage: Page {
         okButton.tap()
         
         return MessagePage(application: application)
+    }
+    
+    func tapTrashButton() -> LogoutPage  {
+        let trashButton = application.buttons[Identifiers.trashButton]
+        trashButton.tap()
+        
+        return LogoutPage(application: application)
+        
     }
 }
