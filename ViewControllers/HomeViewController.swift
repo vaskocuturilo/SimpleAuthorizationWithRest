@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         Buttons.styleButton(logoutButton)
         
         let userDefault = UserDefaults.standard
-        userName.text = "This is name of : \(userDefault.string(forKey: "key_Value")!)"
+        userName.text = "This is name of : \(userDefault.string(forKey: "login")!)"
         
     }
     
@@ -52,7 +52,7 @@ class HomeViewController: UIViewController {
     @IBAction func tapDeleteButton(_ sender: Any) {
         let userDefault = UserDefaults.standard
         
-        HelperApi.functions.removeUser(username: userDefault.string(forKey: "key_Value")!,
+        HelperApi.functions.removeUser(username: userDefault.string(forKey: "login")!,
                                        token: userDefault.string(forKey: "token")!) { (isSuccess, str) in
             if isSuccess {
                 self.showSuccessMessage(message: str)
