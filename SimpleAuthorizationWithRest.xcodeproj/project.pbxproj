@@ -36,6 +36,7 @@
 		7285756726A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */; };
 		7285756C26A9FE8C000BED75 /* LogoutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285756B26A9FE8C000BED75 /* LogoutPage.swift */; };
 		7285757126AA014A000BED75 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757026AA014A000BED75 /* MessagePage.swift */; };
+		7285757C26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */; };
 		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
 		72DCB67726925A1B00631980 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72DCB67626925A1B00631980 /* Alamofire */; };
 		72FA082F26983E1A00A6879B /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA082E26983E1A00A6879B /* UserToken.swift */; };
@@ -96,6 +97,7 @@
 		7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginPageObjectTest.swift; sourceTree = "<group>"; };
 		7285756B26A9FE8C000BED75 /* LogoutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPage.swift; sourceTree = "<group>"; };
 		7285757026AA014A000BED75 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
+		7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSignUpPageObjectTest.swift; sourceTree = "<group>"; };
 		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
 		72FA082E26983E1A00A6879B /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 		832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */,
+				7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */,
 			);
 			path = PageObject;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				72457B5826A9BFDF005EC434 /* SimpleRemoveUserTest.swift in Sources */,
 				7285757126AA014A000BED75 /* MessagePage.swift in Sources */,
 				72667BE426A9820800DFCF90 /* SimpleLoginNewUserTest.swift in Sources */,
+				7285757C26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift in Sources */,
 				7285756226A9FBAF000BED75 /* BaseTestCase.swift in Sources */,
 				7285756C26A9FE8C000BED75 /* LogoutPage.swift in Sources */,
 				7285754726A9F993000BED75 /* Page.swift in Sources */,
