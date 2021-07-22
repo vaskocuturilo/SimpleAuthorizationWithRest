@@ -28,10 +28,7 @@ You will need the following technologies available to try it out:
 * Xcode 
 ### Ho w to run
 
-``` ```
-
-- [x] ability to run tests for different browsers/os by configuring;
-- [x] ability to run tests for different environments(urls) by configuring/by command-line.
+``` xcodebuild test -workspace SimpleAuthorizationWithRest.xcworkspace -scheme SimpleAuthorizationWithRest -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.0' -resultBundlePath TestResults```
 
 # xcresults
 A command line tool to extract test summaries & screenshots from Xcode 11 XCResult files.
@@ -54,3 +51,5 @@ chmod +x xcresults
 ```allure serve outputDirectory/```
 
 ![](https://a.radikal.ru/a02/2107/75/87e8010ceec7.png)
+![](https://c.radikal.ru/c38/2107/0f/42c81b9054b1.png)
+
