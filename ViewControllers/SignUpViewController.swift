@@ -7,15 +7,23 @@
 
 import UIKit
 
+fileprivate let AccessabilityRoot = Accessibility.Screen.SignUp.self
 class SignUpViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var nameField: UITextField!
     
+    @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        view.accessibilityIdentifier = AccessabilityRoot.View
+        emailField.accessibilityIdentifier = AccessabilityRoot.EmailField
+        passwordField.accessibilityIdentifier = AccessabilityRoot.PasswordField
+        nameField.accessibilityIdentifier = AccessabilityRoot.NameField
+        signUpButton.accessibilityIdentifier = AccessabilityRoot.SignUpButton
+
         // Do any additional setup after loading the view.
         
     }
