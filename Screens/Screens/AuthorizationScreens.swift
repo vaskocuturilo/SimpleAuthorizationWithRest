@@ -18,5 +18,6 @@ final class AuthorizationScreens {
     lazy var rootScreen = RootScreen(application: container.application)
     lazy var loginScreen = LoginScreen(application: container.application)
     lazy var profileScreen = ProfileScreen(application: container.application)
+    lazy var signUpScreen = SignUpScreen(application: container.application)
 }
 

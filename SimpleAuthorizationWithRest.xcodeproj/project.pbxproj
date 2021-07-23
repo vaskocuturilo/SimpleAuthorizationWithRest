@@ -38,6 +38,8 @@
 		7285757126AA014A000BED75 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757026AA014A000BED75 /* MessagePage.swift */; };
 		7285757C26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */; };
 		7285758E26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285758D26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift */; };
+		72BAE41026AAA91B00A39601 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BAE40F26AAA91B00A39601 /* SignUpScreen.swift */; };
+		72BAE41526AAA9DF00A39601 /* SimpleSignUpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BAE41426AAA9DF00A39601 /* SimpleSignUpTest.swift */; };
 		72CD013926AA847600215128 /* AuthorizationBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD013826AA847600215128 /* AuthorizationBaseClass.swift */; };
 		72CD014126AA850E00215128 /* AuthorizationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD014026AA850E00215128 /* AuthorizationTestCase.swift */; };
 		72CD014626AA85F200215128 /* AuthorizationTestCaseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD014526AA85F200215128 /* AuthorizationTestCaseContainer.swift */; };
@@ -110,6 +112,8 @@
 		7285757026AA014A000BED75 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
 		7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSignUpPageObjectTest.swift; sourceTree = "<group>"; };
 		7285758D26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRemoveUserPageObjectTest.swift; sourceTree = "<group>"; };
+		72BAE40F26AAA91B00A39601 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		72BAE41426AAA9DF00A39601 /* SimpleSignUpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSignUpTest.swift; sourceTree = "<group>"; };
 		72CD013826AA847600215128 /* AuthorizationBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationBaseClass.swift; sourceTree = "<group>"; };
 		72CD014026AA850E00215128 /* AuthorizationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCase.swift; sourceTree = "<group>"; };
 		72CD014526AA85F200215128 /* AuthorizationTestCaseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCaseContainer.swift; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				72CD016F26AA89B300215128 /* SimpleLoginTest.swift */,
+				72BAE41426AAA9DF00A39601 /* SimpleSignUpTest.swift */,
 			);
 			path = ScreenPattern;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				72CD015326AA876F00215128 /* RootScreen.swift */,
 				72CD017826AA8BC400215128 /* LoginScreen.swift */,
 				72CD017D26AA8E2100215128 /* ProfileScreen.swift */,
+				72BAE40F26AAA91B00A39601 /* SignUpScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				7285755D26A9FB23000BED75 /* SignUp.swift in Sources */,
 				72CD016B26AA88F800215128 /* AccessibilityEnum.swift in Sources */,
 				72CD014C26AA864D00215128 /* AuthorizationScreens.swift in Sources */,
+				72BAE41026AAA91B00A39601 /* SignUpScreen.swift in Sources */,
 				7285754F26A9F9D8000BED75 /* MainPage.swift in Sources */,
 				72457B5826A9BFDF005EC434 /* SimpleRemoveUserTest.swift in Sources */,
 				7285757126AA014A000BED75 /* MessagePage.swift in Sources */,
@@ -623,6 +630,7 @@
 				72CD015426AA876F00215128 /* RootScreen.swift in Sources */,
 				7285754726A9F993000BED75 /* Page.swift in Sources */,
 				72CD017E26AA8E2100215128 /* ProfileScreen.swift in Sources */,
+				72BAE41526AAA9DF00A39601 /* SimpleSignUpTest.swift in Sources */,
 				7285755426A9FA48000BED75 /* LoginPage.swift in Sources */,
 				72CD017026AA89B300215128 /* SimpleLoginTest.swift in Sources */,
 				72CD013926AA847600215128 /* AuthorizationBaseClass.swift in Sources */,
