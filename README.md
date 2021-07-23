@@ -17,7 +17,7 @@ This is simple authorization application with REST API.
 
 **Note**: Please send link to this repo when you are done.
 
-**Note**: Please use this backend server (https://github.com/vaskocuturilo/Server-Note-App).
+**Note**: Please use this backend server (https://github.com/vaskocuturilo/simple-auth).
 
 ![](https://d.radikal.ru/d27/2107/d7/ba3bdd553416.png)
 
