@@ -1,6 +1,7 @@
 
 import UIKit
 
+fileprivate let AccessabilityRoot = Accessibility.Screen.Profile.self
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var deleteButton: UIBarButtonItem!
@@ -11,6 +12,8 @@ class HomeViewController: UIViewController {
     var token = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = AccessabilityRoot.View
+        logoutButton.accessibilityIdentifier = AccessabilityRoot.LogoutButton
         Buttons.styleButton(logoutButton)
         
         let userDefault = UserDefaults.standard

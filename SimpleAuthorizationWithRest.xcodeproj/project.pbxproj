@@ -38,6 +38,16 @@
 		7285757126AA014A000BED75 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757026AA014A000BED75 /* MessagePage.swift */; };
 		7285757C26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */; };
 		7285758E26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285758D26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift */; };
+		72CD013926AA847600215128 /* AuthorizationBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD013826AA847600215128 /* AuthorizationBaseClass.swift */; };
+		72CD014126AA850E00215128 /* AuthorizationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD014026AA850E00215128 /* AuthorizationTestCase.swift */; };
+		72CD014626AA85F200215128 /* AuthorizationTestCaseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD014526AA85F200215128 /* AuthorizationTestCaseContainer.swift */; };
+		72CD014C26AA864D00215128 /* AuthorizationScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD014B26AA864D00215128 /* AuthorizationScreens.swift */; };
+		72CD015426AA876F00215128 /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD015326AA876F00215128 /* RootScreen.swift */; };
+		72CD016B26AA88F800215128 /* AccessibilityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD015926AA87AF00215128 /* AccessibilityEnum.swift */; };
+		72CD017026AA89B300215128 /* SimpleLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD016F26AA89B300215128 /* SimpleLoginTest.swift */; };
+		72CD017426AA8A7600215128 /* AccessibilityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD015926AA87AF00215128 /* AccessibilityEnum.swift */; };
+		72CD017926AA8BC400215128 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD017826AA8BC400215128 /* LoginScreen.swift */; };
+		72CD017E26AA8E2100215128 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD017D26AA8E2100215128 /* ProfileScreen.swift */; };
 		72DCB6632692599500631980 /* HelperApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DCB6622692599500631980 /* HelperApi.swift */; };
 		72DCB67726925A1B00631980 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72DCB67626925A1B00631980 /* Alamofire */; };
 		72FA082F26983E1A00A6879B /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA082E26983E1A00A6879B /* UserToken.swift */; };
@@ -100,6 +110,15 @@
 		7285757026AA014A000BED75 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
 		7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSignUpPageObjectTest.swift; sourceTree = "<group>"; };
 		7285758D26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRemoveUserPageObjectTest.swift; sourceTree = "<group>"; };
+		72CD013826AA847600215128 /* AuthorizationBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationBaseClass.swift; sourceTree = "<group>"; };
+		72CD014026AA850E00215128 /* AuthorizationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCase.swift; sourceTree = "<group>"; };
+		72CD014526AA85F200215128 /* AuthorizationTestCaseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTestCaseContainer.swift; sourceTree = "<group>"; };
+		72CD014B26AA864D00215128 /* AuthorizationScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreens.swift; sourceTree = "<group>"; };
+		72CD015326AA876F00215128 /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		72CD015926AA87AF00215128 /* AccessibilityEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityEnum.swift; sourceTree = "<group>"; };
+		72CD016F26AA89B300215128 /* SimpleLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTest.swift; sourceTree = "<group>"; };
+		72CD017826AA8BC400215128 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		72CD017D26AA8E2100215128 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		72DCB6622692599500631980 /* HelperApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApi.swift; sourceTree = "<group>"; };
 		72FA082E26983E1A00A6879B /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 		832960DD696C0E2F6DC8A753 /* Pods-SimpleAuthorizationWithRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAuthorizationWithRestTests/Pods-SimpleAuthorizationWithRestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,19 +179,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		72457B4126A9B76A005EC434 /* simple */ = {
+		72457B4126A9B76A005EC434 /* SimpleTests */ = {
 			isa = PBXGroup;
 			children = (
 				72667BE326A9820800DFCF90 /* SimpleLoginNewUserTest.swift */,
 				72457B3C26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift */,
 				72457B5726A9BFDF005EC434 /* SimpleRemoveUserTest.swift */,
 			);
-			path = simple;
+			path = SimpleTests;
 			sourceTree = "<group>";
 		};
 		724C89052690357C00ACA77B = {
 			isa = PBXGroup;
 			children = (
+				72CD013626AA83ED00215128 /* Screens */,
 				7285754526A9F973000BED75 /* PageObject */,
 				7266E4E0269701670084E6CC /* Helpers */,
 				7266E4DC269700C40084E6CC /* ViewControllers */,
@@ -231,8 +251,9 @@
 		72667BE226A981DB00DFCF90 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
-				7285751A26A9EEEC000BED75 /* PageObject */,
-				72457B4126A9B76A005EC434 /* simple */,
+				72CD012F26AA83C900215128 /* ScreenPattern */,
+				7285751A26A9EEEC000BED75 /* PageObjectPattern */,
+				72457B4126A9B76A005EC434 /* SimpleTests */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -260,14 +281,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		7285751A26A9EEEC000BED75 /* PageObject */ = {
+		7285751A26A9EEEC000BED75 /* PageObjectPattern */ = {
 			isa = PBXGroup;
 			children = (
 				7285756626A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift */,
 				7285757B26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift */,
 				7285758D26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift */,
 			);
-			path = PageObject;
+			path = PageObjectPattern;
 			sourceTree = "<group>";
 		};
 		7285754526A9F973000BED75 /* PageObject */ = {
@@ -282,6 +303,53 @@
 				7285757026AA014A000BED75 /* MessagePage.swift */,
 			);
 			path = PageObject;
+			sourceTree = "<group>";
+		};
+		72CD012F26AA83C900215128 /* ScreenPattern */ = {
+			isa = PBXGroup;
+			children = (
+				72CD016F26AA89B300215128 /* SimpleLoginTest.swift */,
+			);
+			path = ScreenPattern;
+			sourceTree = "<group>";
+		};
+		72CD013626AA83ED00215128 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				72CD015826AA878B00215128 /* Accessibility */,
+				72CD014A26AA864200215128 /* Screens */,
+				72CD013726AA844B00215128 /* Base */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		72CD013726AA844B00215128 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				72CD013826AA847600215128 /* AuthorizationBaseClass.swift */,
+				72CD014026AA850E00215128 /* AuthorizationTestCase.swift */,
+				72CD014526AA85F200215128 /* AuthorizationTestCaseContainer.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		72CD014A26AA864200215128 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				72CD014B26AA864D00215128 /* AuthorizationScreens.swift */,
+				72CD015326AA876F00215128 /* RootScreen.swift */,
+				72CD017826AA8BC400215128 /* LoginScreen.swift */,
+				72CD017D26AA8E2100215128 /* ProfileScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		72CD015826AA878B00215128 /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				72CD015926AA87AF00215128 /* AccessibilityEnum.swift */,
+			);
+			path = Accessibility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +583,7 @@
 				7266E4D82696FF830084E6CC /* HomeViewController.swift in Sources */,
 				72DCB6632692599500631980 /* HelperApi.swift in Sources */,
 				7248A6A4269707A900A5C2D7 /* TextFieldStyle.swift in Sources */,
+				72CD017426AA8A7600215128 /* AccessibilityEnum.swift in Sources */,
 				724C89162690357C00ACA77B /* ViewController.swift in Sources */,
 				72020E8C26999C6B0073E147 /* ResponseData.swift in Sources */,
 				7248A69A269706B900A5C2D7 /* LoginViewController.swift in Sources */,
@@ -538,19 +607,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CD014126AA850E00215128 /* AuthorizationTestCase.swift in Sources */,
 				7285756726A9FBF2000BED75 /* SimpleLoginPageObjectTest.swift in Sources */,
 				7285755D26A9FB23000BED75 /* SignUp.swift in Sources */,
+				72CD016B26AA88F800215128 /* AccessibilityEnum.swift in Sources */,
+				72CD014C26AA864D00215128 /* AuthorizationScreens.swift in Sources */,
 				7285754F26A9F9D8000BED75 /* MainPage.swift in Sources */,
 				72457B5826A9BFDF005EC434 /* SimpleRemoveUserTest.swift in Sources */,
 				7285757126AA014A000BED75 /* MessagePage.swift in Sources */,
 				72667BE426A9820800DFCF90 /* SimpleLoginNewUserTest.swift in Sources */,
 				7285757C26AA0D76000BED75 /* SimpleSignUpPageObjectTest.swift in Sources */,
 				7285756226A9FBAF000BED75 /* BaseTestCase.swift in Sources */,
+				72CD017926AA8BC400215128 /* LoginScreen.swift in Sources */,
 				7285756C26A9FE8C000BED75 /* LogoutPage.swift in Sources */,
+				72CD015426AA876F00215128 /* RootScreen.swift in Sources */,
 				7285754726A9F993000BED75 /* Page.swift in Sources */,
+				72CD017E26AA8E2100215128 /* ProfileScreen.swift in Sources */,
 				7285755426A9FA48000BED75 /* LoginPage.swift in Sources */,
+				72CD017026AA89B300215128 /* SimpleLoginTest.swift in Sources */,
+				72CD013926AA847600215128 /* AuthorizationBaseClass.swift in Sources */,
 				7285758E26AA12BC000BED75 /* SimpleRemoveUserPageObjectTest.swift in Sources */,
 				72457B3D26A9B6FC005EC434 /* SimpleCreateNewUserTest.swift in Sources */,
+				72CD014626AA85F200215128 /* AuthorizationTestCaseContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

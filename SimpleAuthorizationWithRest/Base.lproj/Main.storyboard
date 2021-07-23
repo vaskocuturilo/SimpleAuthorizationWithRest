@@ -58,6 +58,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HBf-uy-CSp"/>
+                    <connections>
+                        <outlet property="LoginButton" destination="hfc-Wx-aGH" id="j0J-rx-j2W"/>
+                        <outlet property="SignButton" destination="zFk-pl-4k2" id="373-sP-67p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,6 +122,7 @@
                     <navigationItem key="navigationItem" id="0tu-cb-hrF"/>
                     <connections>
                         <outlet property="emailField" destination="TQZ-hH-hb6" id="CrC-1g-9Wo"/>
+                        <outlet property="loginButton" destination="YpF-Jz-76b" id="PF5-ax-PEq"/>
                         <outlet property="passwordField" destination="jrL-gU-sfg" id="TMI-CT-Gsg"/>
                     </connections>
                 </viewController>
