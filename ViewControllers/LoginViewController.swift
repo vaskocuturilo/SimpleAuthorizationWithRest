@@ -7,17 +7,24 @@
 
 import UIKit
 
+fileprivate let AccessabilityRoot = Accessibility.Screen.Login.self
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         TextFieldStyle.styleTextField(emailField)
         TextFieldStyle.styleTextField(passwordField)
+        
+        view.accessibilityIdentifier = AccessabilityRoot.View
+        emailField.accessibilityIdentifier = AccessabilityRoot.EmailField
+        passwordField.accessibilityIdentifier = AccessabilityRoot.PasswordField
+        loginButton.accessibilityIdentifier = AccessabilityRoot.LoginButton
     }
     
     @IBAction func tapLoginButton(_ sender: Any) {
