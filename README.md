@@ -19,6 +19,8 @@ This is simple authorization application with REST API.
 
 **Note**: Please use this backend server (https://github.com/vaskocuturilo/Server-Note-App).
 
+![](https://d.radikal.ru/d27/2107/d7/ba3bdd553416.png)
+
 
 You will need the following technologies available to try it out:
 * Git
@@ -49,6 +51,7 @@ chmod +x xcresults
 ### Open Allure report in browser
 
 ```allure serve outputDirectory/```
+
 
 ![](https://a.radikal.ru/a02/2107/75/87e8010ceec7.png)
 ![](https://c.radikal.ru/c38/2107/0f/42c81b9054b1.png)
